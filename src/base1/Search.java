@@ -1,7 +1,15 @@
+package base1;
+
 import java.util.Arrays;
 import java.util.Random;
 
-public class Base1 {
+/**
+ * 输出na中不存在于ma中的元素
+ * 例: ma [1,3,5,9,12] na[2,3,5,7,10]
+ * 输出: 2,7
+ *
+ */
+public class Search {
 
     public static void main(String[] args) {
         final int m = 10;

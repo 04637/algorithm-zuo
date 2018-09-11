@@ -49,7 +49,7 @@ public class Sort {
      * 选择排序
      * 时间复杂度: O(N^2)
      */
-    public static void selectSort(int[] a) {
+    public static void selectionSort(int[] a) {
         for (int i = 0; i < a.length - 1; i++) {
             int minIndex = i;
             for (int j = i + 1; j < a.length; j++) {

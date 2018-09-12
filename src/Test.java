@@ -1,9 +1,18 @@
+import java.lang.reflect.Method;
+import java.util.Collections;
+
 public class Test {
-    public static void main(String[] args) {
-        int sum = 0;
-        for(int i = 1;i<=100;i++){
-            sum+=i;
+    private String toString1(){
+        return "1";
+    }
+    public static void main(String[] args) throws ClassNotFoundException {
+        Class cls = Test.class;
+        Method[] methods = cls.getDeclaredMethods();
+
+        for (Method m :
+                methods) {
+            System.out.println(m);
         }
-        System.out.println(sum);
+        System.out.println(methods);
     }
 }
